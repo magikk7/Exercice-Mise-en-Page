@@ -1,0 +1,36 @@
+/*fichiers css qui reinitialise*/
+@import 'minireset.css';
+@import 'normalize.css';
+
+/*generalites*/
+.color_blanc {
+    color: white
+}
+
+.color_gris {
+    color: gray;
+}
+
+.color_noir {
+    color: black;
+}
+
+.bg_violet {
+    background-color: blueviolet;
+}
+
+.light_violet {
+    color: purple;
+}
+
+.bg_green {
+    background-color: green;
+}
+
+.decoration_none {
+    text-decoration: none;
+}
+
+.majuscules {
+    text-transform: uppercase;
+}
