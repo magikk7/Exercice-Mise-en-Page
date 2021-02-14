@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon petit graphisme</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!--premiere partie / logo et nav-->
-<header>
-        <div class="bg_violet color_blanc">
-            <div class="light_violet">icone</div>
-            <h1 class="color_blanc">Mon petit graphisme</h1>
+<header class="d_flex">
+        <div class="div_logo">
+            <img src="images/logo_long.png" alt="logo">
         </div>
 
         <nav>
@@ -24,98 +23,108 @@
         </nav>
 </header>
     
-<main>
+<main class="d_flex"> 
     <!--deuxieme partie / presentation en image-->
-    <section>
-        <div class="bg_violet color_blanc">
-            <div class="light_violet"><i>icone</i></div><h2 class="color_blanc">Mon petit graphisme</h2>
+    <section class="bg_image">
+        <div class="section1__div_logo">
+            <img src="images/logo_long.png" alt="logo">
         </div>
 
-        <h3 class="color_blanc">Agence de graphisme</h3>
+        <h3 class="color_blanc section1__titre3">Agence de graphisme</h3>
     </section>
 
     <!--deuxieme partie / presentation en texte-->
     <section>
-        <p>Mon petit graphisme est une agence de graphisme qui aide les entreprises à créer des visuels attratifs.</p>
+        <p class="section2__paragraphe1">Mon petit graphisme est une agence de graphisme qui aide les entreprises à créer des visuels attratifs.</p>
     
-        <div>
+        <div class="d_flex">
             <!--card1-->
-            <div>
-                <div><i>icone1</i></div>
+            <div class="section2__cards">
+                <div>
+                    <img src="images/graphic-design.png" alt="icone graphisme">
+                </div>
                 <h3 class="majuscules">Graphisme</h3>
                 <p>Que vous ayez besoin de graphisme pour un site web, des cartes de visite ou des affiches, nos réalisons des visuels dont vous serez fiers.</p>
             </div>
 
             <!--card2-->
-            <div>
-                <div><i>icone2</i></div>
+            <div class="section2__cards">
+                <div>
+                    <img src="images/strategie.png" alt="icone stratégie">
+                </div>
                 <h3 class="majuscules">Stratégie</h3>
                 <p>Plutôt que de suggérer des graphismes à la mode, nous prenons le temps de comprendre vos objectifs et nous nous adaptons à vos besoins.</p>
             </div>
 
             <!--card3-->
-            <div>
-                <div><i>icone3</i></div>
+            <div class="section2__cards">
+                <div>
+                    <img src="images/illustrations.png" alt="icone illustrations">
+                </div>
                 <h3 class="majuscules">Illustrations</h3>
                 <p>Nos graphistes vous proposerons des illustrations 100% originales.</p>
             </div>
         </div>
 
-        <div>
-            <div><q>ddddddddd</q></div>
-            <div class="color_gris"><small>ddddddddd</small></div>
+        <div class="section2__citations">
+            <div><q>Mon petit graphisme est une excellente agence de graphisme. Les graphistes sont à l'écoute des besoins et m'ont permis de renouveler complètement la carte de mon restaurant.</q></div>
+            <div class="color_gris"><small>Amandine, restauratrice</small></div>
         </div>
     </section>
 </main>
 
 <!--troisieme partie / pied de page-->
-<footer class="bg_violet">
-    <p class="color_blanc">Mon petit graphisme - Agence de graphisme basée à Paris</p>
+<footer class="bg_violet d_flex">
+    <p class="color_blanc footer__paragraphe">Mon petit graphisme - Agence de graphisme basée à Paris</p>
 
-    <div>
+    <div class="reseaux_sociaux">
         <ul>
-            <li><a href="#" class="decoration_none color_gris"><i>twitter</i></a></li>
-            <li><a href="#" class="decoration_none color_gris"><i>facebook</i></a></li>
-            <li><a href="#" class="decoration_none color_gris"><i>instagram</i></a></li>
+            <li><a href="#" class="decoration_none color_gris"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="decoration_none color_gris"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="decoration_none color_gris"><i class="fab fa-instagram"></i></a></li>
         </ul>
     </div>
 
-    <!--sous partie 1-->
-    <div>
-        <h2 class="color_gris">Accès rapides</h2>
+    <div class="d_flex footer__infos">
+        <!--sous partie 1-->
+        <div class="footer__sous_infos">
+            <h2 class="color_gris">Accès rapides</h2>
 
-        <div>
-        <ul>
-            <li><a href="#" class="decoration_none color_blanc">Accueil</a></li>
-            <li><a href="#" class="decoration_none color_blanc">Contact</a></li>
-        </ul>
+        <div class="footer__listes paddings">
+            <ul>
+                <li><a href="#" class="decoration_none color_blanc">Accueil</a></li>
+                <li><a href="#" class="decoration_none color_blanc">Contact</a></li>
+            </ul>
+            </div>
         </div>
-    </div>
 
-    <!--sous partie 2-->
-    <div>
-        <h2 class="color_gris">A propos</h2>
+        <!--sous partie 2-->
+        <div class="footer__sous_infos">
+            <h2 class="color_gris">A propos</h2>
 
-        <div>
-        <ul>
-            <li><a href="#" class="decoration_none color_blanc">Données personnelles</a></li>
-            <li><a href="#" class="decoration_none color_blanc">Mentions légales</a></li>
-            <li><a href="#" class="decoration_none color_blanc">Cookies</a></li>
-        </ul>
+            <div class="footer__listes paddings">
+            <ul>
+                <li><a href="#" class="decoration_none color_blanc">Données personnelles</a></li>
+                <li><a href="#" class="decoration_none color_blanc">Mentions légales</a></li>
+                <li><a href="#" class="decoration_none color_blanc">Cookies</a></li>
+            </ul>
+            </div>
         </div>
-    </div>
 
-    <!--sous partie 3-->
-    <div>
-        <h2 class="color_gris">Coordonnées</h2>
+        <!--sous partie 3-->
+        <div class="footer__sous_infos">
+            <h2 class="color_gris">Coordonnées</h2>
 
-            <address class="color_blanc bg_green">
-                10 quai de la Charente<br>
-                75019 Paris<br>
-                01 23 45 67 89
-            </address>
+                <address class="color_blanc paddings">
+                    10 quai de la Charente<br>
+                    75019 Paris<br>
+                    01 23 45 67 89
+                </address>
+        </div>
     </div>
 </footer>
 
+<!--script js pour fontawesome-->
+<script src="https://kit.fontawesome.com/2bf677936b.js" crossorigin="anonymous"></script>      
 </body>
 </html>

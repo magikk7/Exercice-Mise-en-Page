@@ -1,8 +1,14 @@
 /*fichiers css qui reinitialise*/
 @import 'minireset.css';
-@import 'normalize.css';
+@import 'normalize.css'; 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 /*generalites*/
+body {
+    font-family: Roboto;
+    width: 100%;
+    /* height: 100vh; */
+}
 .color_blanc {
     color: white
 }
@@ -23,14 +29,116 @@
     color: purple;
 }
 
-.bg_green {
-    background-color: green;
-}
-
 .decoration_none {
     text-decoration: none;
 }
 
 .majuscules {
     text-transform: uppercase;
+}
+
+/*le site*/
+.bg_image {
+    background-image: url("images/backgroung_image.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+/*flexbox*/
+.d_flex, nav ul, section, .reseaux_sociaux ul {
+    display: flex;
+}
+
+header {
+    justify-self: space-between;
+}
+
+main, footer {
+    flex-direction: column;
+}
+
+.div_logo {
+    flex:1;
+}
+
+nav {
+    
+}
+nav ul {
+    flex: 1;
+    justify-content: baseline; 
+}
+
+nav ul li {
+    padding: 40px 0 40px 40px;
+}
+
+section:first-child {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.section1__titre3 {
+    padding-top: 30px;
+}
+
+section:last-child {
+flex-direction: column;
+margin: 0 200px; 
+}
+
+.section2__paragraphe1, .section2__cards, .footer__paragraphe {
+text-align: center;
+margin-top: 30px;
+}
+
+.section2__citations {
+    text-align: center;
+    margin: 40px 200px 0 200px;
+    }
+
+.section2__paragraphe1 {
+    padding: 15px;
+}
+
+.section2__cards {
+    padding: 0 15px;
+}
+
+.reseaux_sociaux {
+    margin: 10px 400px; 
+}
+.reseaux_sociaux ul {
+    justify-content: center;
+}
+
+.reseaux_sociaux ul li{
+    padding: 0 50px;
+}
+
+.footer__listes ul {
+    list-style: none
+}
+
+.footer__listes ul li::before {
+    content: "•"; color: white; padding: 10px;
+}
+
+.footer__infos {
+    justify-content: space-around;
+    padding: 25px 0;
+}
+
+.footer__sous_infos {
+    margin: 0 50px;
+}
+
+address {
+    padding-top: 15px;
+}
+
+.paddings {
+    padding-left: 20px;
 }
